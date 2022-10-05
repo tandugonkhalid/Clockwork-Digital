@@ -233,3 +233,107 @@ footer{
     height: 5em;
     transform: rotate(30deg);
 }
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1325px;
+
+
+@media (max-width: $breakpoint-mobile){
+
+    header, main, section,footer{
+        padding: 0;
+    }
+   
+    .shape, .shape1, .shape2
+    ,.shape3, .shape4, .shape5,
+    .shape6, .shape7, .shape8,
+    .shape9, .shape10, .shape11, .shape12
+    ,.shape13, .shape14, .shape15, .shape16{
+        display: none;
+    }
+
+    p{
+        padding: 0 2em;
+    }
+
+    section p{
+        align-self: flex-start;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    
+        div:first-child{
+            padding: 0em;
+        }
+
+        div:nth-of-type(2){
+            padding: 0em;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet){
+
+    header, main, section,footer{
+        padding: 0;
+    }
+
+    .shape14, .shape15, .shape16{
+        display: none;
+    }
+
+    p{
+        padding: 0 2em;
+    }
+
+    section p{
+        align-self: flex-start;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    
+        div:first-child{
+            padding: 0em;
+        }
+
+        div:nth-of-type(2){
+            padding: 0em;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    header, main, section,footer{
+        padding: 2em;
+    }
+
+    .shape14, .shape15, .shape16{
+        display: none;
+    }
+
+    p{
+        padding: 0 10em;
+    }
+
+    section p{
+        align-self: flex-start;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    
+        div:first-child{
+            padding: 0em;
+        }
+
+        div:nth-of-type(2){
+            padding: 0em;
+        }
+    }
+}

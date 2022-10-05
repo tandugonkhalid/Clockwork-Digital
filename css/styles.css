@@ -260,4 +260,101 @@ footer p {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
+
+@media (max-width: 480px) {
+  header, main, section, footer {
+    padding: 0;
+  }
+  .shape, .shape1, .shape2
+, .shape3, .shape4, .shape5,
+  .shape6, .shape7, .shape8,
+  .shape9, .shape10, .shape11, .shape12
+, .shape13, .shape14, .shape15, .shape16 {
+    display: none;
+  }
+  p {
+    padding: 0 2em;
+  }
+  section p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div:first-child {
+    padding: 0em;
+  }
+  footer div:nth-of-type(2) {
+    padding: 0em;
+  }
+}
+
+@media (max-width: 768px) {
+  header, main, section, footer {
+    padding: 0;
+  }
+  .shape14, .shape15, .shape16 {
+    display: none;
+  }
+  p {
+    padding: 0 2em;
+  }
+  section p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div:first-child {
+    padding: 0em;
+  }
+  footer div:nth-of-type(2) {
+    padding: 0em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1325px) {
+  header, main, section, footer {
+    padding: 2em;
+  }
+  .shape14, .shape15, .shape16 {
+    display: none;
+  }
+  p {
+    padding: 0 10em;
+  }
+  section p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div:first-child {
+    padding: 0em;
+  }
+  footer div:nth-of-type(2) {
+    padding: 0em;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
